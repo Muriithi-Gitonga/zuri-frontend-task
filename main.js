@@ -2,7 +2,7 @@
 function updateUTCTime() {
   const currentUTCTime = new Date().getTime();
   document.querySelector('[data-testid="currentUTCTime"]').textContent =
-    currentUTCTime + " milliseconds";
+    currentUTCTime;
 }
 
 // update current week
