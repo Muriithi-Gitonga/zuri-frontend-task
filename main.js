@@ -2,7 +2,7 @@
 function updateUTCTime() {
   const currentUTCTime = new Date().getTime();
   document.querySelector('[data-testid="currentUTCTime"]').textContent =
-    `Current UTC Time: ${currentUTCTime} milliseconds`;
+    currentUTCTime + " milliseconds";
 }
 
 // update current week
@@ -19,7 +19,7 @@ function updateDayOfWeek() {
   const currentDayIndex = new Date().getDay(); // 0 for Sunday, 1 for Monday, etc.
   const currentDayOfWeek = daysOfWeek[currentDayIndex];
   document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent =
-    `Current Day: ${currentDayOfWeek}`;
+    currentDayOfWeek;
 }
 
 // Call the functions initially to display data
